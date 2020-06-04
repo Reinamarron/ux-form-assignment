@@ -1,2 +1,69 @@
-
 /*  Put your CSS Here */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.selectWrapper {
+  position: relative;
+} 
+.selectWrapper:after {
+  content: '>';
+  font: 17px "Consolas", monospace;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  pointer-events: none;
+
+  right: some spacing...
+  bottom: some spacing...
+  color: your font color...
+}
+
+.gradient-background{
+background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+}
+
+Chrome and Other Modern 
+The opacity is for firefox
+input::placeholder {
+  color: #ccc;
+  opacity: 1; 
+}
+
+For Internet Explorer 10-11 
+input:-ms-input-placeholder {
+   
+   color: #ccc;
+}
+
+For Internet Explorer 10-11 
+input:-ms-input-placeholder {  
+  color: #ccc;
+}
+
+body{
+
+}
+
+
+body, input  {
+  color: rgb(red, green, blue);
+  background-color: rgba(red, green, blue, alpha);
+  font-family: "open sans";
+}
+
+.card-body {
+  background-color: black;
+  color: blanchedalmond;
+  max-width: 35%;
+
+  .card-header {
+    background-color: gradient;
+    color: blanchedalmond;
